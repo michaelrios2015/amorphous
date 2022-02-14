@@ -7,11 +7,9 @@ I should really know more about them I can use them...
 
 <head>
     <style>
-        div {
-            /* apperently if you only have one thing it should be border style... */
-            border-style: solid;
-            border-width: thick;
-            border-color: aquamarine;
+        .center {
+            text-align: center;
+            text-transform: capitalize;
         }
 
         p {
@@ -26,25 +24,44 @@ I should really know more about them I can use them...
 
 
 <body>
-    <div>
-        <p>
-            this is a random html page often called a web page..now with a p
-            tag for paragraph honestly not sure yes for paragraph now in a div tag
-            div for content divison
-        </p>
-        <p>
-            so this is another paragrah... what am i trying to do here.. not much.. i get
-            very annoyed at css and html. which is fairly useless and probably tied to
-            frustration over leaving Baltimore, leaving Stephney to die alone and still
-            struggling to get a non library job...
-        </p>
-        <p>
-            I mean leaving Stephney to die alone should really be the most important thing
-            but you know humans and miscontrued emotions poor little css and html no wonder
-            I get mad at it I am asking it to do things it cannot do... you know how about
-            we start with the resume page
-        </p>
-    </div>
+
+    <!-- article is essentially the same as div but easier for people and machine readers to makes sense of semantic elements accoring to w3 school  -->
+    <article>
+        <header>
+            <h1 class="center">attempts at life</h1>
+        </header>
+        <!-- more semantic elements  -->
+        <section>
+            <p>
+                what am i trying to do<br>
+                I don't seem to know I am presumablly tring to get a job..
+                am i trying to get a programming job...
+                I guess so and if so what does that mean....
+                in terms of fullstack it pretty much means i get a front end job
+                and for that i have two routes i can learn how to do some algorithms
+                which is honestly not terribly hard but does require time and thought
+                or i learn how to make a pretty website with node, react and an api
+                which is also not super hard but also requires time and thought
+            </p>
+            <p>
+                this is a random html page often called a web page..now with a p
+                tag for paragraph honestly not sure yes for paragraph now in a div tag
+                div for content divison
+            </p>
+            <p>
+                so this is another paragrah... what am i trying to do here.. not much.. i get
+                very annoyed at css and html. which is fairly useless and probably tied to
+                frustration over leaving Baltimore, leaving Stephney to die alone and still
+                struggling to get a non library job...
+            </p>
+            <p>
+                I mean leaving Stephney to die alone should really be the most important thing
+                but you know humans and miscontrued emotions poor little css and html no wonder
+                I get mad at it I am asking it to do things it cannot do... you know how about
+                we start with the resume page
+            </p>
+        </section>
+    </article>
 
 </body>
 
