@@ -6,6 +6,7 @@ I should really know more about them I can use them...
 <html>
 
 <head>
+    <!-- the style always goes in the header but is often it's own document and just referenced here -->
     <style>
         .center {
             text-align: center;
@@ -19,6 +20,12 @@ I should really know more about them I can use them...
             border-color: rebeccapurple;
         }
     </style>
+    <!-- you can put script in here but if you are manipulating the DOM you need to put it underneath as it reads from top to bottom -->
+    <script>
+        for (i = 0; i < 19; i++) {
+            console.log("jo!!" + i)
+        }
+    </script>
 
 </head>
 
@@ -64,5 +71,19 @@ I should really know more about them I can use them...
     </article>
 
 </body>
+
+<!-- this returns nothing if started before you would also ussually seperate this into it's own file and just link it here -->
+<script>
+    // since this is not one thing but an arry like structure
+    const h1 = document.getElementsByTagName('header');
+    console.log(h1);
+    // we splat it out into an array 
+    let h1s = [...h1]
+    console.log(h1s)
+    const p = document.createTextNode('jwdjf;sdlk')
+    // h1.appendChild(p)
+    // and choose which one to, append chile does need  a node, meaning it's a div, or a p or some such i believe 
+    h1s[0].appendChild(p)
+</script>
 
 </html>
